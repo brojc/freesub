@@ -6,7 +6,27 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 @
   type: vless
-  server: uae.unixzone.us
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 @
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 03 @
+  type: vless
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -17,7 +37,33 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 @
+- name: 🇦🇪 阿联酋 (UAE) 04 @
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 @
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 @
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -31,6 +77,32 @@ proxies:
     path: /
     headers:
       Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 07 @
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 @
+  type: vless
+  server: 104.16.100.215
+  port: 8880
+  uuid: 20f21d96-3700-46d9-9f63-5933403c0c18
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: restless-math-7bde.299-75c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +110,12 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 @
   - 🇦🇪 阿联酋 (UAE) 02 @
+  - 🇦🇪 阿联酋 (UAE) 03 @
+  - 🇦🇪 阿联酋 (UAE) 04 @
+  - 🇦🇪 阿联酋 (UAE) 05 @
+  - 🇦🇪 阿联酋 (UAE) 06 @
+  - 🇦🇪 阿联酋 (UAE) 07 @
+  - 🇦🇪 阿联酋 (UAE) 08 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +123,11 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 @
   - 🇦🇪 阿联酋 (UAE) 02 @
+  - 🇦🇪 阿联酋 (UAE) 03 @
+  - 🇦🇪 阿联酋 (UAE) 04 @
+  - 🇦🇪 阿联酋 (UAE) 05 @
+  - 🇦🇪 阿联酋 (UAE) 06 @
+  - 🇦🇪 阿联酋 (UAE) 07 @
+  - 🇦🇪 阿联酋 (UAE) 08 @
 rules:
 - MATCH,PROXIES
