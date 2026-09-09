@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 @
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 @
   type: vless
   server: 84.235.244.108
@@ -44,39 +37,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 @
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 05 @
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 06 @
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,9 +45,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 @
   - 🇦🇪 阿联酋 (UAE) 02 @
   - 🇦🇪 阿联酋 (UAE) 03 @
-  - 🇦🇪 阿联酋 (UAE) 04 @
-  - 🇦🇪 阿联酋 (UAE) 05 @
-  - 🇦🇪 阿联酋 (UAE) 06 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,8 +53,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 @
   - 🇦🇪 阿联酋 (UAE) 02 @
   - 🇦🇪 阿联酋 (UAE) 03 @
-  - 🇦🇪 阿联酋 (UAE) 04 @
-  - 🇦🇪 阿联酋 (UAE) 05 @
-  - 🇦🇪 阿联酋 (UAE) 06 @
 rules:
 - MATCH,PROXIES
