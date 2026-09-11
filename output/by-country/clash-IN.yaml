@@ -18,18 +18,16 @@ proxies:
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 @
   type: vless
-  server: cfd.url0.top
-  port: 443
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: in.520782.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: in.520782.xyz
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 @
   type: vmess
   server: 152.67.8.205
@@ -42,10 +40,45 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 04 @
+  type: vless
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 05 @
+  type: vless
+  server: cfd.url0.top
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in.520782.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: in.520782.xyz
+- name: 🇮🇳 印度 (India) 06 @
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 07 @
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -56,7 +89,7 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +99,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 @
   - 🇮🇳 印度 (India) 03 @
   - 🇮🇳 印度 (India) 04 @
+  - 🇮🇳 印度 (India) 05 @
+  - 🇮🇳 印度 (India) 06 @
+  - 🇮🇳 印度 (India) 07 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +111,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 @
   - 🇮🇳 印度 (India) 03 @
   - 🇮🇳 印度 (India) 04 @
+  - 🇮🇳 印度 (India) 05 @
+  - 🇮🇳 印度 (India) 06 @
+  - 🇮🇳 印度 (India) 07 @
 rules:
 - MATCH,PROXIES
