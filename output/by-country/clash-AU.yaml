@@ -39,19 +39,6 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 04 @
-  type: vless
-  server: 192.65.217.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 @
   - 🇦🇺 澳大利亚 (Australia) 02 @
   - 🇦🇺 澳大利亚 (Australia) 03 @
-  - 🇦🇺 澳大利亚 (Australia) 04 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 @
   - 🇦🇺 澳大利亚 (Australia) 02 @
   - 🇦🇺 澳大利亚 (Australia) 03 @
-  - 🇦🇺 澳大利亚 (Australia) 04 @
 rules:
 - MATCH,PROXIES
