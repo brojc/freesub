@@ -6,7 +6,90 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 @
   type: vless
-  server: 104.18.34.14
+  server: 45.130.125.73
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+- name: 🇸🇨 SC 02 @
+  type: vless
+  server: 104.18.0.1
+  port: 443
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: all.speedtest03.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: all.speedtest03.ccwu.cc
+- name: 🇸🇨 SC 03 @
+  type: vless
+  server: 104.18.32.47
+  port: 2087
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  network: ws
+  ws-opts:
+    path: /game
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+- name: 🇸🇨 SC 04 @
+  type: vless
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇸🇨 SC 05 @
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇸🇨 SC 06 @
+  type: vless
+  server: 104.21.19.76
+  port: 2096
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
+- name: 🇸🇨 SC 07 @
+  type: vless
+  server: 188.114.97.6
   port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -14,12 +97,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /?ed=2560security=tls
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 02 @
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 08 @
   type: vless
-  server: 104.18.47.113
+  server: 104.18.46.234
   port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -30,10 +113,37 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 03 @
+- name: 🇸🇨 SC 09 @
   type: vless
-  server: 172.64.42.85
+  server: 104.18.46.46
   port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 10 @
+  type: vless
+  server: 172.67.152.162
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  network: ws
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇸🇨 SC 11 @
+  type: vless
+  server: 104.18.39.218
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -51,6 +161,14 @@ proxy-groups:
   - 🇸🇨 SC 01 @
   - 🇸🇨 SC 02 @
   - 🇸🇨 SC 03 @
+  - 🇸🇨 SC 04 @
+  - 🇸🇨 SC 05 @
+  - 🇸🇨 SC 06 @
+  - 🇸🇨 SC 07 @
+  - 🇸🇨 SC 08 @
+  - 🇸🇨 SC 09 @
+  - 🇸🇨 SC 10 @
+  - 🇸🇨 SC 11 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +177,13 @@ proxy-groups:
   - 🇸🇨 SC 01 @
   - 🇸🇨 SC 02 @
   - 🇸🇨 SC 03 @
+  - 🇸🇨 SC 04 @
+  - 🇸🇨 SC 05 @
+  - 🇸🇨 SC 06 @
+  - 🇸🇨 SC 07 @
+  - 🇸🇨 SC 08 @
+  - 🇸🇨 SC 09 @
+  - 🇸🇨 SC 10 @
+  - 🇸🇨 SC 11 @
 rules:
 - MATCH,PROXIES
