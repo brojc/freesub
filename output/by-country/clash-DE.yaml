@@ -5,76 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 @
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 @
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 @
-  type: vless
-  server: undef.network
-  port: 2052
-  uuid: f5267873-5379-409e-b67a-145ea54deb70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 04 @
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 05 @
   type: vmess
-  server: 85.159.228.232
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇩🇪 德国 (Germany) 06 @
+- name: 🇩🇪 德国 (Germany) 02 @
   type: vless
-  server: 81.95.4.189
+  server: rubifen.adaspoloandco.com
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /vws/
+    path: /GOrbEh
     headers:
-      Host: bab-6.site
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 03 @
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 @
+  type: vless
+  server: 140.82.34.114
+  port: 25585
+  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 @
+  type: vless
+  server: 140.82.34.114
+  port: 25585
+  uuid: 8b84bbec-9a55-47c2-ac2e-03c41065e572
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 @
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
 - name: 🇩🇪 德国 (Germany) 07 @
   type: ss
   server: 8.209.74.72
@@ -95,10 +78,10 @@ proxies:
   servername: ''
 - name: 🇩🇪 德国 (Germany) 09 @
   type: ss
-  server: 141.95.29.163
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
+  server: 79.137.207.190
+  port: 3
+  cipher: chacha20-ietf-poly1305
+  password: 9ri2bpxWs4FHXRjlhTFlQQ
   udp: true
 - name: 🇩🇪 德国 (Germany) 10 @
   type: ss
@@ -109,65 +92,19 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 11 @
   type: ss
-  server: 130.61.144.173
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MSBulFIL/2cQ1Jg+HZEfrPrfk/2Ev2nlSei+wSvdOLY=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 12 @
-  type: ss
   server: 2.58.81.221
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
-- name: 🇩🇪 德国 (Germany) 13 @
-  type: vless
-  server: undef.network
-  port: 2052
-  uuid: f5267873-5379-409e-b67a-145ea54deb70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 14 @
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: zoom.us
-- name: 🇩🇪 德国 (Germany) 15 @
+- name: 🇩🇪 德国 (Germany) 12 @
   type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  server: setlor.rehan-iogsar.ir
+  port: 4680
+  cipher: 2022-blake3-aes-128-gcm
+  password: 1JvlmtT4v8y1yGczDtT6Ww==:aCtpeMietGsJY50h6jDW6w==
   udp: true
-- name: 🇩🇪 德国 (Germany) 16 @
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 17 @
+- name: 🇩🇪 德国 (Germany) 13 @
   type: vless
   server: 82.24.203.20
   port: 2087
@@ -180,7 +117,7 @@ proxies:
     path: /fd5ba98a3970
     headers:
       Host: 82.24.203.20
-- name: 🇩🇪 德国 (Germany) 18 @
+- name: 🇩🇪 德国 (Germany) 14 @
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -190,14 +127,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 @
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 15 @
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
-- name: 🇩🇪 德国 (Germany) 20 @
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 16 @
   type: vless
   server: 81.95.4.189
   port: 443
@@ -211,59 +154,20 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 21 @
+- name: 🇩🇪 德国 (Germany) 17 @
   type: vless
-  server: 140.82.34.114
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 @
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 @
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 24 @
-  type: ss
-  server: setlor.rehan-iogsar.ir
-  port: 4680
-  cipher: 2022-blake3-aes-128-gcm
-  password: 1JvlmtT4v8y1yGczDtT6Ww==:aCtpeMietGsJY50h6jDW6w==
-  udp: true
-- name: 🇩🇪 德国 (Germany) 25 @
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /29c8fed7ca22
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 26 @
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 @
+      Host: zoom.us
+- name: 🇩🇪 德国 (Germany) 18 @
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -276,14 +180,51 @@ proxies:
     path: /29c8fed7ca22
     headers:
       Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 28 @
+- name: 🇩🇪 德国 (Germany) 19 @
   type: ss
-  server: 79.137.207.190
-  port: 3
-  cipher: chacha20-ietf-poly1305
-  password: 9ri2bpxWs4FHXRjlhTFlQQ
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 29 @
+- name: 🇩🇪 德国 (Germany) 20 @
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 @
+  type: ss
+  server: 130.61.34.252
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vQfEC6ISz0hIR/c7zLbfa5SxfaCCmcGPzetIzIkhLyk=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 @
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 23 @
+  type: vless
+  server: undef.network
+  port: 2052
+  uuid: f5267873-5379-409e-b67a-145ea54deb70
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 24 @
   type: vless
   server: 93.152.217.41
   port: 40443
@@ -295,7 +236,7 @@ proxies:
     public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 30 @
+- name: 🇩🇪 德国 (Germany) 25 @
   type: vless
   server: 93.152.217.41
   port: 40443
@@ -337,11 +278,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 23 @
   - 🇩🇪 德国 (Germany) 24 @
   - 🇩🇪 德国 (Germany) 25 @
-  - 🇩🇪 德国 (Germany) 26 @
-  - 🇩🇪 德国 (Germany) 27 @
-  - 🇩🇪 德国 (Germany) 28 @
-  - 🇩🇪 德国 (Germany) 29 @
-  - 🇩🇪 德国 (Germany) 30 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -372,10 +308,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 23 @
   - 🇩🇪 德国 (Germany) 24 @
   - 🇩🇪 德国 (Germany) 25 @
-  - 🇩🇪 德国 (Germany) 26 @
-  - 🇩🇪 德国 (Germany) 27 @
-  - 🇩🇪 德国 (Germany) 28 @
-  - 🇩🇪 德国 (Germany) 29 @
-  - 🇩🇪 德国 (Germany) 30 @
 rules:
 - MATCH,PROXIES
