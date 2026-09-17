@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 @
+- name: 🇨🇭 CH 01 @
   type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  server: 104.18.28.234
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 @
+  - 🇨🇭 CH 01 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 @
+  - 🇨🇭 CH 01 @
 rules:
 - MATCH,PROXIES

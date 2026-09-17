@@ -6,19 +6,40 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 @
   type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 @
+  type: ss
   server: 195.133.5.102
   port: 9011
   cipher: aes-256-gcm
   password: 895b4b796a357570
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 @
+- name: 🇷🇺 俄罗斯 (Russia) 03 @
   type: ss
   server: 194.87.196.13
   port: 9011
   cipher: aes-256-gcm
   password: 4938e975724d0ed1
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 @
+- name: 🇷🇺 俄罗斯 (Russia) 04 @
+  type: vless
+  server: 188.114.97.8
+  port: 8443
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 @
   type: ss
   server: 195.58.48.137
   port: 9019
@@ -33,6 +54,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 @
   - 🇷🇺 俄罗斯 (Russia) 02 @
   - 🇷🇺 俄罗斯 (Russia) 03 @
+  - 🇷🇺 俄罗斯 (Russia) 04 @
+  - 🇷🇺 俄罗斯 (Russia) 05 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +64,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 @
   - 🇷🇺 俄罗斯 (Russia) 02 @
   - 🇷🇺 俄罗斯 (Russia) 03 @
+  - 🇷🇺 俄罗斯 (Russia) 04 @
+  - 🇷🇺 俄罗斯 (Russia) 05 @
 rules:
 - MATCH,PROXIES
