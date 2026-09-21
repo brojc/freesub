@@ -4,9 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) @
+- name: 🇻🇳 VN 01 @
   type: vless
-  server: 172.64.146.211
+  server: 160.25.75.40
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /html?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇻🇳 VN 02 @
+  type: vless
+  server: 172.64.53.87
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -15,12 +29,12 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) @
+- name: 🇻🇳 VN 03 @
   type: vless
-  server: 104.18.42.54
+  server: 172.64.53.60
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -37,14 +51,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) @
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) @
+  - 🇻🇳 VN 01 @
+  - 🇻🇳 VN 02 @
+  - 🇻🇳 VN 03 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) @
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) @
+  - 🇻🇳 VN 01 @
+  - 🇻🇳 VN 02 @
+  - 🇻🇳 VN 03 @
 rules:
 - MATCH,PROXIES
