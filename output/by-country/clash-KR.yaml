@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 @
-  type: vless
-  server: 47.80.57.116
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia6.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia6.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 02 @
   type: vless
   server: 151.245.106.49
@@ -29,7 +22,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 @
   type: vless
   server: 151.245.106.49
@@ -41,7 +34,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
