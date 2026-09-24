@@ -4,7 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) @
+- name: 🇯🇵 日本 (Japan) 01 (家宽) @
+  type: vless
+  server: 146.190.124.36
+  port: 74
+  uuid: d4d0d523-0c2a-4b9d-b630-0637f0b77904
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
+  type: vless
+  server: 118.167.206.152
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) @
   type: vless
   server: 60.248.219.78
   port: 443
@@ -23,12 +49,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) @
+  - 🇯🇵 日本 (Japan) 01 (家宽) @
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) @
+  - 🇯🇵 日本 (Japan) 01 (家宽) @
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) @
 rules:
 - MATCH,PROXIES

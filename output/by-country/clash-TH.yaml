@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 02 @
   type: vless
   server: 34.15.162.1
@@ -27,20 +27,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇹🇭 TH 03 @
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 04 @
   type: vless
   server: 34.15.162.1
   port: 443
@@ -52,7 +40,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 05 @
+- name: 🇹🇭 TH 04 @
   type: vless
   server: 34.15.176.240
   port: 443
@@ -63,7 +51,19 @@ proxies:
   reality-opts:
     public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 05 @
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 06 @
   type: vless
   server: 34.15.162.1
@@ -87,44 +87,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: edge
 - name: 🇹🇭 TH 08 @
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 09 @
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 10 @
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 11 @
   type: vless
   server: 103.86.49.57
   port: 80
@@ -137,19 +101,7 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 12 @
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇹🇭 TH 13 @
+- name: 🇹🇭 TH 09 @
   type: vless
   server: 34.15.162.1
   port: 443
@@ -161,7 +113,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇹🇭 TH 14 @
+- name: 🇹🇭 TH 10 @
   type: vless
   server: 34.15.162.1
   port: 443
@@ -172,19 +124,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 TH 15 @
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -200,11 +140,6 @@ proxy-groups:
   - 🇹🇭 TH 08 @
   - 🇹🇭 TH 09 @
   - 🇹🇭 TH 10 @
-  - 🇹🇭 TH 11 @
-  - 🇹🇭 TH 12 @
-  - 🇹🇭 TH 13 @
-  - 🇹🇭 TH 14 @
-  - 🇹🇭 TH 15 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -220,10 +155,5 @@ proxy-groups:
   - 🇹🇭 TH 08 @
   - 🇹🇭 TH 09 @
   - 🇹🇭 TH 10 @
-  - 🇹🇭 TH 11 @
-  - 🇹🇭 TH 12 @
-  - 🇹🇭 TH 13 @
-  - 🇹🇭 TH 14 @
-  - 🇹🇭 TH 15 @
 rules:
 - MATCH,PROXIES
