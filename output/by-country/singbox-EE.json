@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 @",
-        "🇱🇰 LK 02 @"
+        "🇪🇪 EE 01 @",
+        "🇪🇪 EE 02 @"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 @",
-        "🇱🇰 LK 02 @"
+        "🇪🇪 EE 01 @",
+        "🇪🇪 EE 02 @"
       ],
       "url": "https://www.google.com/generate_204"
     },
