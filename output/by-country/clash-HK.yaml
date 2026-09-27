@@ -11,17 +11,62 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: v7qnj9jvxtnpmj4l
   udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 @
+  type: ss
+  server: 124.151.25.50
+  port: 8024
+  cipher: aes-128-gcm
+  password: 2wsxcde4
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 @
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 @
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 @
+  - 🇭🇰 中国香港 (Hong Kong) 02 @
+  - 🇭🇰 中国香港 (Hong Kong) 03 @
+  - 🇭🇰 中国香港 (Hong Kong) 04 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 @
+  - 🇭🇰 中国香港 (Hong Kong) 02 @
+  - 🇭🇰 中国香港 (Hong Kong) 03 @
+  - 🇭🇰 中国香港 (Hong Kong) 04 @
 rules:
 - MATCH,PROXIES
