@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 @
   type: vless
+  server: port2.axiomed.ir
+  port: 443
+  uuid: 73b03366-975a-4ca7-a41c-0f7e1b5d944a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: l75yY2sJQN5Fn0Gx.fORNeWIran-1013.worKERS.DeV
+  network: ws
+  ws-opts:
+    path: /vl/olqQqiJtpH7kVUcHl0PXN?ed=2560
+    headers:
+      Host: l75yy2sjqn5fn0gx.fornewiran-1013.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 @
+  type: vless
   server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
@@ -18,17 +32,28 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 03 @
+  type: ss
+  server: 176.32.35.2
+  port: 10090
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 @
+  - 🇷🇺 俄罗斯 (Russia) 02 @
+  - 🇷🇺 俄罗斯 (Russia) 03 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 @
+  - 🇷🇺 俄罗斯 (Russia) 02 @
+  - 🇷🇺 俄罗斯 (Russia) 03 @
 rules:
 - MATCH,PROXIES
