@@ -4,24 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 @
+- name: 🇮🇪 IE 01 @
   type: ss
-  server: 132.243.175.144
-  port: 8388
+  server: 20.166.59.119
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  password: gJe7umStIck5Mieg
+  udp: true
+- name: 🇮🇪 IE 02 @
+  type: ss
+  server: 20.166.59.119
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 @
+  - 🇮🇪 IE 01 @
+  - 🇮🇪 IE 02 @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 @
+  - 🇮🇪 IE 01 @
+  - 🇮🇪 IE 02 @
 rules:
 - MATCH,PROXIES
