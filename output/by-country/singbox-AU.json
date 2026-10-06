@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) @"
+        "🇦🇺 澳大利亚 (Australia) 01 @",
+        "🇦🇺 澳大利亚 (Australia) 02 @",
+        "🇦🇺 澳大利亚 (Australia) 03 @"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) @"
+        "🇦🇺 澳大利亚 (Australia) 01 @",
+        "🇦🇺 澳大利亚 (Australia) 02 @",
+        "🇦🇺 澳大利亚 (Australia) 03 @"
       ],
       "url": "https://www.google.com/generate_204"
     },
