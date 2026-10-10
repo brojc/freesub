@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 60.248.219.78
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
   type: vless
   server: 61.230.162.88
@@ -30,7 +30,21 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) @
+- name: 🇺🇸 美国 (United States) 03 (家宽) @
+  type: vless
+  server: 104.17.100.185
+  port: 443
+  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlesss.xttd.eu.org
+  network: ws
+  ws-opts:
+    path: /proxyip=proxyip.fxxk.dedyn.io
+    headers:
+      Host: vlesss.xttd.eu.org
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) @
   type: vless
   server: 61.18.134.10
   port: 443
@@ -44,7 +58,7 @@ proxies:
     path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
     headers:
       Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) @
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) @
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -65,8 +79,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) @
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) @
+  - 🇺🇸 美国 (United States) 03 (家宽) @
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) @
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) @
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,7 +89,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) @
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) @
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) @
+  - 🇺🇸 美国 (United States) 03 (家宽) @
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) @
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) @
 rules:
 - MATCH,PROXIES
